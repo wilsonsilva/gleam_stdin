@@ -5,9 +5,12 @@ packages = [
   { name = "gleam_erlang", version = "0.25.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleam_erlang", source = "hex", outer_checksum = "054D571A7092D2A9727B3E5D183B7507DAB0DA41556EC9133606F09C15497373" },
   { name = "gleam_stdlib", version = "0.36.0", build_tools = ["gleam"], requirements = [], otp_app = "gleam_stdlib", source = "hex", outer_checksum = "C0D14D807FEC6F8A08A7C9EF8DFDE6AE5C10E40E21325B2B29365965D82EB3D4" },
   { name = "gleeunit", version = "1.1.2", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleeunit", source = "hex", outer_checksum = "72CDC3D3F719478F26C4E2C5FED3E657AC81EC14A47D2D2DEBB8693CA3220C3B" },
+  { name = "meck", version = "0.9.2", build_tools = ["rebar3"], requirements = [], otp_app = "meck", source = "hex", outer_checksum = "81344F561357DC40A8344AFA53767C32669153355B626EA9FCBC8DA6B3045826" },
+  { name = "mockth", version = "0.3.2", build_tools = ["gleam"], requirements = ["gleam_erlang", "gleam_stdlib", "meck"], otp_app = "mockth", source = "hex", outer_checksum = "00BED139504EC09A6840F9F11717F9206167C4DF2E8BE722798BD32EA43349B4" },
 ]
 
 [requirements]
-gleam_erlang = { version = "~> 0.25"}
+gleam_erlang = { version = "~> 0.25" }
 gleam_stdlib = { version = "~> 0.34 or ~> 1.0" }
 gleeunit = { version = "~> 1.0" }
+mockth = { version = "~> 0.3"}
